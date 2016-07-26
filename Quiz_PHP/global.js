@@ -23,8 +23,9 @@ window.addEventListener("load", function(){
           r1.innerHTML = correctAnswers.q1
 
       });
-      
-      check.open("get", "check_answer.php?a1=" + a1.value);
+
+      var string = document.getElementById("a1").value;
+      check.open("get", "check_answer.php?string=" + string);
       check.send();
 
     });

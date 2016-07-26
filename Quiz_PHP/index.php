@@ -20,10 +20,6 @@
 	<span id="r1"></span>
 </div>
 
-<!-- <div class="results" id="q2Answers"></div>
-
-<div class="results" id="q3Answers"></div> -->
-
 
 
 </body>

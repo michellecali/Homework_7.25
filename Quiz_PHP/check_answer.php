@@ -1,6 +1,6 @@
 <?php
 
-	if ($_GET['a1'] == "Blue") {
+	if ($_GET['string'] == "Blue") {
 
 ?>
 
