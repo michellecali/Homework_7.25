@@ -1,23 +1,29 @@
 <?php
 	
-	$string = $_GET['string'];
+	
+	$string = "Blue,White,Brown";
+
+	// $string = $_GET['string'];
 	$array = explode(",", $string);
+	// print_r($array);
+
 	$q1Result = "incorrect";
-	$q2Result = "incorrect";
-	$q3Result = "incorrect";
 	if ($array[0] == "Blue") {
 		$q1Result = "correct";
-		return $q1Result;
 	}
+	// echo $q1Result;
+
+	$q2Result = "incorrect";
 	if ($array[1] == "White") {
 		$q2Result = "correct";
-		return $q2Result;
 	}
+	// echo $q2Result;
+
+	$q3Result = "incorrect";
 	if ($array[2] == "Brown") {
 		$q3Result = "correct";
-		return $q3Result;
 	}
-
+	// echo $q3Result;
 
 	
 	$post_data = array(
@@ -26,6 +32,7 @@
     'q3' => $q3Result
   	);
 
+// echo $post_data;
 
 echo json_encode($post_data);
 	 

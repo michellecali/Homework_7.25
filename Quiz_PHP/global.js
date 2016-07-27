@@ -27,7 +27,8 @@ window.addEventListener("load", function(){
 
       check.addEventListener("load", function(e){
         
-        var correctAnswers = JSON.parse(e.target.response)
+        var correctAnswers = JSON.parse(e.target.response);
+        
           r1.innerHTML = correctAnswers.q1;
           r2.innerHTML = correctAnswers.q2;
           r3.innerHTML = correctAnswers.q3;
